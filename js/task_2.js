@@ -13,10 +13,12 @@ function getZnak(znak) {
     return znak; 
 }
 
-function doMath(x, znak, y) {
-    x = getNumber('Enter the first number:');
-    znak = getZnak();
-    y = getNumber('Enter the second number:');
+let x = getNumber('Enter the first number:');
+let znak = getZnak();
+let y = getNumber('Enter the second number:');
+
+
+function doMath() {
     let result = 0;
     if (znak === '+') {
         result = x + y;
