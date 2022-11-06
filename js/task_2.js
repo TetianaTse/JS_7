@@ -17,8 +17,8 @@ let x = getNumber('Enter the first number:');
 let znak = getZnak();
 let y = getNumber('Enter the second number:');
 
-
-function doMath() {
+document.write(`The result of a mathematical operation ${doMath(x, znak, y)}`);
+function doMath(value1, operation, value2) {
     let result = 0;
     if (znak === '+') {
         result = x + y;
@@ -40,4 +40,4 @@ function doMath() {
         return result;
     }
 }
-document.write(`The result of a mathematical operation ${doMath()}`);
+
